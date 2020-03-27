@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="Control2StateCell" customModule="SmartHome" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đèn trần" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUI-mB-Rws">
+                        <rect key="frame" x="16" y="12" width="66" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9I-En-I6e">
+                        <rect key="frame" x="244" y="8.5" width="60" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="6CS-w7-fVf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="ON/OFF"/>
+                        <state key="selected">
+                            <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="highlighted">
+                            <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tắt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKk-Rz-Mxk">
+                        <rect key="frame" x="148.5" y="12.5" width="23" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JKk-Rz-Mxk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="61h-lQ-PN2"/>
+                    <constraint firstItem="HUI-mB-Rws" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DgH-iy-rbD"/>
+                    <constraint firstItem="HUI-mB-Rws" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Kds-xF-0N8"/>
+                    <constraint firstItem="R9I-En-I6e" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="W5J-cu-M5o"/>
+                    <constraint firstItem="JKk-Rz-Mxk" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="bgx-8k-6tl"/>
+                    <constraint firstAttribute="trailing" secondItem="R9I-En-I6e" secondAttribute="trailing" constant="16" id="d30-ny-pjA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnChange" destination="R9I-En-I6e" id="L3e-oF-7X8"/>
+                <outlet property="lblDevice" destination="HUI-mB-Rws" id="voI-Rs-rn3"/>
+                <outlet property="lblValue" destination="JKk-Rz-Mxk" id="ErJ-6r-pj3"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="142.63392857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

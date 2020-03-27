@@ -1,0 +1,11 @@
+/* 
+  File.strings
+  SmartHome
+
+  Created by Alpha on 3/3/20.
+  Copyright © 2020 Alpha. All rights reserved.
+*/
+"all_lbl_on" = "Bật";
+"all_lbl_off" = "Tắt";
+"all_lbl_error" = "NC";
+"all_btn_change" = "On/Off";
